@@ -1,0 +1,27 @@
+Exercice 1 
+
+1. 	La classe Graphic permet d'afficher des éléments de base tel que du texte, des formes géométriques. 
+	La classe Graphics2D hérite de la classe Graphic. Il permet de représenter des éléments nouveaux tel que des formes plus complexes, des paths, 
+		des transformations ( avoir des dégradé de couleur, déplacer un objet) 
+
+2. Code
+
+3. "Frame frame = new JFrame("Java Avance - Graphic Display");" : Création d'une nouvelle fenetre dont le nom est Java Avance - Graphic Display
+	"frame.setSize(new Dimension(500,500));" :  Permet d'indiquer la taille de la fenetre 
+	"frame.setVisible(true);" : Permet d'afficher la fenetre qui a été crée 
+	"frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);" : Provoque la fermeture de la fenetre lorsqu'on appuie sur X. 
+																Si on ne le met pas elle peut se fermer mais continuer à tourner en arrière plan
+	"MyDisplay d = new MyDisplay();" : Création d'un nouvel objet d
+	"frame.add(d);" : Ajout du nouvel objet à la fenetre
+	
+4. Code 
+
+5. Elle est appelée par la classe mère Jpanel et aussi par la classe fille.
+	
+6. Swing offre des fonctions intégrés alors que awt c'est l'utilisateur qui doit quelque fois implémenter ses propres fonctions. De plus awt a un espace mémoire 
+	plus grand et il est plus lent.
+	
+Exercice 2 
+
+Pour l'architecture, j'ai voulu avoir une interface Shape qui possède une aire. Ainsi, toutes les formes crées implémenteront l'interface
+Shape et ils auront une aire. je voulais aussi mettre des classes polygone, rectangle, cercle, losange, carré qui implémente la classe Shape. 
